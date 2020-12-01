@@ -21,6 +21,17 @@ class StudentCard extends StatelessWidget {
         child:Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Center(
+              child: CircleAvatar(
+                backgroundImage:AssetImage('assets/minion.jpg') ,
+                radius: 50.0,
+
+              ),
+            ),
+            Divider(
+              height: 60.0,
+              color:Colors.grey[500],
+            ),
             Text(
               'NAME',
               style:TextStyle(
@@ -57,6 +68,23 @@ class StudentCard extends StatelessWidget {
                 )
             ),
             SizedBox(height: 30.0),
+            Row(
+              children: [
+                Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                SizedBox(width:10.0),
+                Text(
+                  'ananthayyaswamy@gmail.com',
+                  style:TextStyle(
+                    color: Colors.grey,
+                    fontSize: 18.0,
+                    letterSpacing: 1.0,
+                  )
+                )
+              ],
+            )
           ],
         )
       ),
